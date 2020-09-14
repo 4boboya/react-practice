@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useEffect, useState} from 'react';
 import './App.css';
+import ProgressDIY from './ProgressDIY';
+import Cheer from './Cheer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App=()=>{
+
+  const [value ,setValue] = useState(10)
+  const [score ,setScore] = useState(0)
+
+  return(
+    <div>
+      <ProgressDIY value={value} onClick={(e)=>{setValue(e.target.value)}}/>,
+      <Cheer value={score} onClick={(e)=>{setScore(e.target.value)}}/>
     </div>
-  );
+  )
 }
 
 export default App;
