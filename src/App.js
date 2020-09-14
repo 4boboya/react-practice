@@ -15,5 +15,9 @@ const App=()=>{
     </div>
   )
 }
+// git 流程
+// git add
+// git commit -m''
+// git push
 
 export default App;
