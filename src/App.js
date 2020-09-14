@@ -16,7 +16,7 @@ const App=()=>{
   )
 }
 // git 流程
-// git add
+// git add *
 // git commit -m''
 // git push
 
